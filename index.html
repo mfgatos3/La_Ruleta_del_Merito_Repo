@@ -106,6 +106,9 @@
 				padding-top: 30px;
 			}
 
+			img { border-radius: 30px; box-shadow: 0 40px 80px rgba(0,0,0,0.4); border: 10px solid var(--inst-red); max-height: 600px; width: auto; transition: transform 0.3s ease; }
+			img:hover { transform: scale(1.02); }
+			
 			ul { list-style: none !important; }
 			li::before { content: '▶'; color: var(--inst-red); margin-right: 20px; font-size: 0.8em; }
 		</style>
@@ -116,7 +119,7 @@
 			<div class="slides">
 				
 				<!-- PORTADA -->
-				<section data-background-gradient="linear-gradient(to bottom, #fff, #f1f5f9)">
+				<section data-background-image="images/portada.png" data-background-opacity="0.1">
 					<div class="watermark">2026</div>
 					<span class="tag">PROYECTO INTERDISCIPLINAR</span>
 					<h1 style="font-size: 5.5em !important;">La Ruleta del Mérito</h1>
@@ -141,8 +144,13 @@
 					<section>
 						<div class="watermark">TESIS</div>
 						<h3>Planteamiento (Tesis)</h3>
-						<div class="content-box" style="border-left-color: var(--inst-grey-dark);">
-							<p style="font-size: 1.8em !important; line-height: 1.3 !important;">"El sistema de calificaciones actual fuerza un <span class="highlight">mercado competitivo</span> donde el valor del estudiante se mide en números. Se requiere una intervención artística para defender la <span class="highlight">dignidad humana</span> y la solidaridad."</p>
+						<div class="grid-2">
+							<div class="content-box" style="border-left-color: var(--inst-grey-dark);">
+								<p style="font-size: 1.5em !important; line-height: 1.3 !important;">"El sistema de calificaciones actual fuerza un <span class="highlight">mercado competitivo</span> donde el valor del estudiante se mide en números. Se requiere una intervención artística para defender la <span class="highlight">dignidad humana</span> y la solidaridad."</p>
+							</div>
+							<div style="text-align: center;">
+								<img src="images/meritocracia.png" alt="Meritocracia">
+							</div>
 						</div>
 					</section>
 					<section>
@@ -215,8 +223,8 @@
 									<li>Materiales: Pupitre, material escolar reciclado, documentos reales.</li>
 								</ul>
 							</div>
-							<div class="content-box" style="background: var(--inst-grey-dark); color: white;">
-								<p style="color: white; font-size: 1.5em !important;">"Materializando la presión académica invisible."</p>
+							<div style="text-align: center;">
+								<img src="images/representacion_jaula.png" alt="Jaula de Documentos">
 							</div>
 						</div>
 					</section>
@@ -225,16 +233,76 @@
 						<div class="watermark">FÍS</div>
 						<h3>La Ruleta Física</h3>
 						<div class="grid-2">
-							<div>
-								<p>Un elemento central que gira para determinar el azar:</p>
-								<ul>
-									<li>Construcción física con <span class="highlight">materiales reciclados</span>.</li>
-									<li>La ruleta girará y se detendrá en un número del 1 al 10.</li>
-									<li>Este número determinará la <span class="highlight">consecuencia social</span> mostrada en la interfaz.</li>
-								</ul>
-							</div>
 							<div class="content-box" style="border-left-color: var(--inst-grey-dark);">
 								<p style="font-size: 1.3em !important;">"El azar físico que define tu valor numérico."</p>
+								<p>La ruleta girará y se detendrá en un número del 1 al 10, determinando la consecuencia social mostrada en la interfaz.</p>
+							</div>
+							<div style="text-align: center;">
+								<img src="images/interactive_art.jpg" alt="Instalación Interactiva">
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- CAPÍTULO 4: MARCO TEÓRICO -->
+				<section>
+					<section>
+						<div class="watermark">04</div>
+						<span class="tag">CAPÍTULO 04</span>
+						<h2>Pilares Teóricos</h2>
+						<div class="content-box">
+							<p>Fundamentado en la sociología del poder, la estética relacional y la doctrina social.</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="watermark">BECK</div>
+						<h3>1. Capital Humano (Becker)</h3>
+						<div class="grid-2">
+							<div>
+								<p>Crítica a la visión del estudiante como una <span class="highlight">inversión de productividad</span>.</p>
+								<ul>
+									<li>La educación enfocada únicamente al rendimiento económico.</li>
+									<li>La pérdida de la identidad individual frente al dato estadístico.</li>
+								</ul>
+							</div>
+							<div style="text-align: center;">
+								<img src="images/Gary-Becker.jpg" alt="Gary Becker">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="watermark">FOUC</div>
+						<h3>2. Poder Disciplinario (Foucault)</h3>
+						<div class="grid-2">
+							<div>
+								<p>El <span class="highlight">Examen</span> como herramienta que normaliza y clasifica al individuo.</p>
+								<ul>
+									<li>Vigilancia constante a través de la nota.</li>
+									<li>El panóptico escolar: vigilancia sin ser visto.</li>
+								</ul>
+							</div>
+							<div style="text-align: center;">
+								<img src="images/Photo_of_Michel_Foucault_on_1970_dustjacket_of_The_Order_of_Things.jpg" alt="Michel Foucault" style="max-height: 400px; margin-bottom: 20px;">
+								<img src="images/Panóptico de Jeremy Bentham - New Illinois State Penitentiary - Descontexto.jpg" alt="Panóptico" style="max-height: 400px;">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="watermark">BOUR</div>
+						<h3>3. Estética Relacional (Bourriaud)</h3>
+						<div class="grid-2">
+							<div>
+								<p>La obra de arte como un <span class="highlight">"estado de encuentro"</span>.</p>
+								<ul>
+									<li>El espectador interactúa con la ruleta para volverse un sujeto reflexivo.</li>
+									<li>El arte como alternativa a la competencia individualista.</li>
+								</ul>
+							</div>
+							<div style="text-align: center;">
+								<img src="images/interactive_art.jpg" alt="Estética Relacional">
 							</div>
 						</div>
 					</section>
@@ -248,10 +316,15 @@
 				</section>
 
 				<!-- CIERRE -->
-				<section data-background-color="#020617">
+				<section data-background-image="images/solidaridad.png" data-background-opacity="0.1">
 					<div class="watermark" style="color: rgba(255,255,255,0.05);">FIN</div>
 					<h1 style="font-size: 7em !important;">DIGNIDAD HUMANA<span style="color: #fff;">.</span></h1>
-					<h3 style="text-align: center !important; color: var(--inst-red); letter-spacing: 15px; font-size: 2.5em !important; margin-top: 50px;">MISIÓN: SOLIDARIDAD</h3>
+					<div class="grid-2">
+						<h3 style="text-align: center !important; color: var(--inst-red); letter-spacing: 15px; font-size: 2.5em !important; margin-top: 50px;">MISIÓN: SOLIDARIDAD</h3>
+						<div style="text-align: center;">
+							<img src="images/solidaridad.png" alt="Solidaridad" style="max-height: 500px;">
+						</div>
+					</div>
 				</section>
 
 			</div>
