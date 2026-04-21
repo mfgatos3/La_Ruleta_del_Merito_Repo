@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>La Ruleta del Mérito | Propuesta Interdisciplinaria</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+		
+		<style>
+			:root {
+				--inst-red: #C41E3A;
+				--inst-grey-dark: #1e293b;
+				--inst-grey-light: #f8fafc;
+				--bg-white: #ffffff;
+				--text-main: #0f172a;
+				--shadow: 0 20px 50px rgba(0,0,0,0.15);
+			}
+
+			.reveal {
+				background-color: var(--bg-white);
+				color: var(--text-main);
+				font-family: 'Inter', system-ui, sans-serif;
+			}
+
+			.reveal::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-image: 
+					linear-gradient(rgba(196, 30, 58, 0.02) 2px, transparent 2px),
+					linear-gradient(90deg, rgba(196, 30, 58, 0.02) 2px, transparent 2px);
+				background-size: 100px 100px;
+				pointer-events: none;
+				z-index: -1;
+			}
+
+			.watermark {
+				position: absolute;
+				font-size: 15em;
+				font-weight: 900;
+				color: rgba(0,0,0,0.03);
+				top: -50px;
+				right: -50px;
+				z-index: -1;
+				user-select: none;
+			}
+
+			.reveal h1 { font-size: 6em !important; font-weight: 900 !important; color: var(--inst-red); text-transform: uppercase; margin-bottom: 20px !important; line-height: 0.8; letter-spacing: -5px; filter: drop-shadow(0 10px 20px rgba(196, 30, 58, 0.2)); }
+			.reveal h2 { font-size: 4em !important; font-weight: 800 !important; color: var(--inst-grey-dark); text-align: left; border-left: 25px solid var(--inst-red); padding-left: 40px !important; margin-bottom: 60px !important; line-height: 1; }
+			.reveal h3 { font-size: 2.5em !important; color: var(--inst-red); font-weight: 800 !important; text-align: left; margin-bottom: 30px !important; text-transform: uppercase; letter-spacing: -1px; }
+			.reveal p, .reveal li { font-size: 2.2em !important; line-height: 1.1 !important; color: var(--text-main); text-align: left; font-weight: 600; margin-bottom: 30px !important; }
+
+			.highlight { color: var(--inst-red); font-weight: 900; background: rgba(196, 30, 58, 0.05); padding: 0 10px; border-radius: 5px; }
+			
+			.content-box {
+				background: var(--inst-grey-light);
+				border-left: 30px solid var(--inst-red);
+				padding: 80px !important;
+				border-radius: 20px;
+				margin: 40px 0;
+				box-shadow: var(--shadow);
+				position: relative;
+				overflow: hidden;
+			}
+
+			.tag {
+				font-size: 1em !important;
+				font-weight: 900;
+				background: var(--inst-grey-dark);
+				color: #fff;
+				padding: 20px 50px;
+				border-radius: 10px;
+				text-transform: uppercase;
+				letter-spacing: 8px;
+				margin-bottom: 60px;
+				display: inline-block;
+				box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+			}
+
+			.grid-2 {
+				display: grid;
+				grid-template-columns: 1.1fr 0.9fr;
+				gap: 100px;
+				align-items: center;
+			}
+
+			.reveal .controls { color: var(--inst-red) !important; scale: 2; bottom: 60px !important; right: 60px !important; }
+			.reveal .progress { height: 15px !important; }
+			.reveal .progress span { background: var(--inst-red) !important; }
+
+			.footer-inst {
+				position: absolute;
+				bottom: 50px;
+				left: 100px;
+				right: 100px;
+				display: flex;
+				justify-content: space-between;
+				font-size: 1em;
+				color: var(--inst-grey-dark);
+				font-weight: 900;
+				text-transform: uppercase;
+				border-top: 5px solid var(--inst-red);
+				padding-top: 30px;
+			}
+
+			img { border-radius: 30px; box-shadow: 0 40px 80px rgba(0,0,0,0.4); border: 10px solid var(--inst-red); max-height: 600px; width: auto; transition: transform 0.3s ease; }
+			
+			ul { list-style: none !important; }
+			li::before { content: '▶'; color: var(--inst-red); margin-right: 20px; font-size: 0.8em; }
+		</style>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<!-- PORTADA -->
+				<section data-background-gradient="linear-gradient(to bottom, #fff, #f1f5f9)">
+					<div class="watermark">2026</div>
+					<span class="tag">PROYECTO INTERDISCIPLINAR</span>
+					<h1 style="font-size: 5.5em !important;">La Ruleta del Mérito</h1>
+					<p style="font-size: 3.5em !important; color: var(--inst-grey-dark); text-align: center !important; font-weight: 900; margin-top: 40px;">
+						¿VALEMOS POR LO QUE SACAMOS O POR LO QUE SOMOS?
+					</p>
+					<div style="margin-top: 150px; font-weight: 900; font-size: 2em; color: var(--inst-red); letter-spacing: 5px;">
+						FORERO • HOMEZ • CAINA
+					</div>
+				</section>
+
+				<!-- CAPÍTULO 1: EL PROBLEMA -->
+				<section>
+					<section>
+						<div class="watermark">01</div>
+						<span class="tag">CAPÍTULO 01</span>
+						<h2>El Problema Académico</h2>
+						<div class="content-box">
+							<p>El sistema de calificaciones actual reduce el valor del estudiante a un <span class="highlight">simple número</span>, ignorando su integridad humana.</p>
+						</div>
+					</section>
+					<section>
+						<div class="watermark">MERC</div>
+						<h3>Lógicas de Libre Mercado</h3>
+						<div class="grid-2">
+							<div>
+								<p>Vivimos la presión de la meritocracia extrema en los salones de clase:</p>
+								<ul>
+									<li>Los estudiantes son vistos como <span class="highlight">"productos"</span> numéricos.</li>
+									<li>Niveles altísimos de estrés y afectación a la salud mental.</li>
+									<li>La competencia destruye la <span class="highlight">solidaridad</span> entre compañeros.</li>
+								</ul>
+							</div>
+							<div class="content-box" style="background: var(--inst-grey-dark); color: white;">
+								<p style="color: white; font-size: 1.5em !important; text-align: center;">"Es difícil preocuparse por el otro cuando el sistema exige competir por ser el mejor."</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- CAPÍTULO 2: OBJETIVOS -->
+				<section>
+					<section>
+						<div class="watermark">02</div>
+						<span class="tag">CAPÍTULO 02</span>
+						<h2>Objetivo del Proyecto</h2>
+						<div class="content-box">
+							<p>Provocar una reflexión crítica sobre la urgencia de separar el <span class="highlight">valor personal</span> de la productividad académica.</p>
+						</div>
+					</section>
+					<section>
+						<div class="watermark">ART</div>
+						<h3>Intervención Artística</h3>
+						<div class="grid-2">
+							<div>
+								<p>Diseñar e instalar una obra plástica envolvente e interactiva:</p>
+								<ul>
+									<li>Uso de <span class="highlight">material reciclado</span> escolar.</li>
+									<li>Análisis del sistema educativo como <span class="highlight">capital humano</span>.</li>
+									<li>Fomento de la empatía comunitaria.</li>
+								</ul>
+							</div>
+							<div class="content-box">
+								<h3>Objetivos Específicos</h3>
+								<p style="font-size: 1.2em !important;">1. Construir la <span class="highlight">"Jaula de Calificaciones"</span>.</p>
+								<p style="font-size: 1.2em !important;">2. Diseñar la <span class="highlight">"Ruleta Interactiva"</span>.</p>
+								<p style="font-size: 1.2em !important;">3. Articular un <span class="highlight">discurso argumentativo</span>.</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- CAPÍTULO 3: MARCO TEÓRICO -->
+				<section>
+					<section>
+						<div class="watermark">03</div>
+						<span class="tag">CAPÍTULO 03</span>
+						<h2>Pilares Teóricos</h2>
+						<div class="content-box">
+							<p>Convergencia entre la sociología del poder, la estética contemporánea y la ética social.</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="watermark">BECK</div>
+						<h3>1. Capital Humano (Becker)</h3>
+						<div class="grid-2">
+							<div>
+								<p>Crítica a la visión del estudiante como una <span class="highlight">inversión de productividad</span>.</p>
+								<ul>
+									<li>La educación enfocada únicamente al rendimiento económico.</li>
+									<li>La pérdida de la identidad individual frente al dato estadístico.</li>
+								</ul>
+							</div>
+							<div class="content-box" style="border-left-color: var(--inst-grey-dark);">
+								<p style="font-size: 1.5em !important;">"El estudiante convertido en un activo económico."</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="watermark">FOUC</div>
+						<h3>2. Poder Disciplinario (Foucault)</h3>
+						<div class="grid-2">
+							<div>
+								<p>El <span class="highlight">Examen</span> como herramienta que normaliza y clasifica al individuo.</p>
+								<ul>
+									<li>Vigilancia constante a través de la nota.</li>
+									<li>El poder que se ejerce al convertir a la persona en un "caso".</li>
+								</ul>
+							</div>
+							<div class="content-box" style="border-left-color: var(--inst-grey-dark);">
+								<p style="font-size: 1.5em !important;">"El examen normaliza, clasifica y excluye."</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="watermark">BOUR</div>
+						<h3>3. Estética Relacional (Bourriaud)</h3>
+						<div class="grid-2">
+							<div>
+								<p>La obra de arte como un <span class="highlight">"estado de encuentro"</span>.</p>
+								<ul>
+									<li>El espectador interactúa con la ruleta para volverse un sujeto reflexivo.</li>
+									<li>El arte como alternativa a la competencia individualista.</li>
+								</ul>
+							</div>
+							<div class="content-box" style="border-left-color: var(--inst-grey-dark);">
+								<p style="font-size: 1.5em !important;">"El arte como espacio para la solidaridad."</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- CAPÍTULO 4: EXPERIENCIA -->
+				<section>
+					<section>
+						<div class="watermark">EXP</div>
+						<span class="tag">CAPÍTULO 04</span>
+						<h2>La Experiencia Directa</h2>
+						<div class="content-box">
+							<p>Un pupitre ahogado en una jaula de documentos y exámenes colgantes.</p>
+						</div>
+					</section>
+					<section>
+						<h3>Giro de la Ruleta</h3>
+						<ul>
+							<li><span class="highlight">Sin Premios:</span> El sistema aleatorio arroja consecuencias sociales basadas en la nota.</li>
+							<li><span class="highlight">Impacto Visual:</span> Demuestra que la salud mental no se encapsula en un boletín.</li>
+							<li><span class="highlight">Conclusión:</span> El mercado competitivo es un error fundamental en la educación.</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- CIERRE -->
+				<section data-background-color="#020617">
+					<div class="watermark" style="color: rgba(255,255,255,0.05);">FIN</div>
+					<h1 style="font-size: 7em !important;">MÁS QUE UNA NOTA<span style="color: #fff;">.</span></h1>
+					<h3 style="text-align: center !important; color: var(--inst-red); letter-spacing: 15px; font-size: 2.5em !important; margin-top: 50px;">PROYECTO COMPLETO</h3>
+				</section>
+
+			</div>
+
+			<div class="footer-inst">
+				<span>LA RULETA DEL MÉRITO</span>
+				<span>COLEGIO SAN BONIFACIO DE LAS LANZAS</span>
+				<span>2025-2026</span>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				controls: true,
+				controlsLayout: 'bottom-right',
+				transition: 'convex',
+				width: 1920,
+				height: 1080,
+				margin: 0.05
+			});
+		</script>
+	</body>
+</html>
