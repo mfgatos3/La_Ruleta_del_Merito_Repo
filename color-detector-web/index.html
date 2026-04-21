@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chameleon Vision | Detector de Color</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHAMELEON <span class="highlight">VISION</span></h1>
+            <p>Apunta con tu cámara a un objeto para activar una respuesta.</p>
+        </header>
+
+        <main>
+            <div class="camera-wrapper">
+                <video id="video" autoplay playsinline></video>
+                <div class="crosshair"></div>
+                <div class="scan-area"></div>
+            </div>
+
+            <div class="info-panel">
+                <div id="color-preview" class="preview-circle"></div>
+                <div class="details">
+                    <h2 id="color-name">Iniciando cámara...</h2>
+                    <p id="color-hex">#000000</p>
+                    <div id="score-container">
+                        <span id="color-value">0</span>/10
+                    </div>
+                    <p id="reaction-msg" class="message">Esperando señal de video...</p>
+                    <p id="verdict-msg" class="verdict"></p>
+                </div>
+            </div>
+            
+            <button id="start-btn">ACTIVAR CÁMARA</button>
+
+            <div class="test-bench">
+                <p>O prueba con estos colores:</p>
+                <div class="palette">
+                    <div class="test-color" data-color="red" style="background: #ff4b2b;"></div>
+                    <div class="test-color" data-color="orange" style="background: #ff8c00;"></div>
+                    <div class="test-color" data-color="yellow" style="background: #ffd700;"></div>
+                    <div class="test-color" data-color="green" style="background: #2ecc71;"></div>
+                    <div class="test-color" data-color="cyan" style="background: #00ced1;"></div>
+                    <div class="test-color" data-color="blue" style="background: #3498db;"></div>
+                    <div class="test-color" data-color="violet" style="background: #9b59b6;"></div>
+                    <div class="test-color" data-color="pink" style="background: #ff69b4;"></div>
+                    <div class="test-color" data-color="black" style="background: #000000;"></div>
+                    <div class="test-color" data-color="white" style="background: #ffffff;"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Canvas oculto para procesar frames -->
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
